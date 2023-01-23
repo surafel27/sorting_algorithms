@@ -1,9 +1,14 @@
 #include "sort.h"
-
+/**
+ * selection_sort - function to sort in selection mode
+ * @array: array to be sorted
+ * @size: the size of the array
+ */
 void selection_sort(int *array, size_t size)
 {
 	size_t i, j, pos_j;
 	int var, var2;
+
 	for (i = 0; i < size; i++)
 	{
 		var2 = 0;
