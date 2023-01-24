@@ -40,8 +40,8 @@ void cocktail_sort_list(listint_t **list)
 
 	if ((*list) == NULL || !(*list) || (*list)->next == NULL)
 		return;
-	nxt =(*list);
-	while (swpd == true)
+	nxt = (*list);
+	while (swpd)
 	{
 		swpd = false;
 		while (nxt->next != NULL)
