@@ -5,16 +5,16 @@
  * @array: array to be sorted
  * @size: size of the array
  */
-void shell_sort(int *array, size_t size)
+void shell_sort(int *array, int size)
 {
-	size_t gap = 1, i, tmp;
-	size_t j;
+	int gap = 1, i, tmp;
+	int j;
 
 	while (gap < size)
 	{
 		for (j = gap; j < size; j++)
 		{
-			for (i = j - gap; j >= 1; i = i - gap)
+			for (i = j - gap; i >= 0; i = i - gap)
 			{
 				if (array[i + gap] > array[i])
 				{
