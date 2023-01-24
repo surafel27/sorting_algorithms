@@ -38,9 +38,9 @@ void cocktail_sort_list(listint_t **list)
 	listint_t *nxt;
 	bool swpd = true;
 
-	if ((*list) == NULL || (*list)->next == NULL || !(*list))
+	if ((*list) == NULL || !(*list) || (*list)->next == NULL)
 		return;
-	nxt = *list;
+	nxt =(*list);
 	while (swpd == true)
 	{
 		swpd = false;
